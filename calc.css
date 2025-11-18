@@ -1,0 +1,63 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#result {
+  width: 23%;
+  height: 60px;
+  font-size: 2em;
+  text-align: right;
+  margin-bottom: 10px;
+  background: black;
+  color: white;
+  border: none;
+  outline: none;
+  margin-bottom: 0%;
+  border-radius: 17px;
+  margin-left: 500px;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    width: 320px;
+    height: 400px;
+    gap: 10px;
+    background-color: black;
+    padding: 20px 10px;
+    border-radius: 20px;
+    margin-top: 0%;
+    font-size: 30px;
+    margin-left: 500px;
+}
+.signs{
+    background-color: rgb(216, 146, 15);
+    color: aliceblue;
+}
+button.zero {
+grid-column: span 2;
+border-radius: 30px;
+}
+button{
+    border-radius: 360px;
+    border: none;
+    background-color: rgb(27, 26, 26);
+    color: white;
+    font-size: 26px;
+}
+button:hover{
+    background-color: rgb(12, 11, 11);
+}
+.signs:hover{
+    background-color: white;
+    color: orange;
+}
+.signed{
+    background-color: rgb(235, 228, 228);
+    color: black;
+}
+.signed:hover{
+    background-color: blanchedalmond;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <input type="text" disabled id="result">
+           <div class="buttons">
+     <button onclick="clearResult()" class="signed">C</button>
+      <button onclick="tooggleSign()" class="signed">+/-</button>
+    <button onclick="deleteLast()" class="signed">DEL</button>
+<button onclick="document.getElementById('result').value+='/'" class="signs">/</button>
+ <button onclick="document.getElementById('result').value+=7">7</button>
+    <button onclick="document.getElementById('result').value+=8">8</button>
+    <button onclick="document.getElementById('result').value+=9">9</button>
+    <button onclick="document.getElementById('result').value+='*'" class="signs">*</button>
+    <button onclick="document.getElementById('result').value+=4">4</button>
+    <button onclick="document.getElementById('result').value+=5">5</button>
+    <button onclick="document.getElementById('result').value+=6">6</button>
+    <button onclick="document.getElementById('result').value+='-'" class="signs">-</button>
+    <button onclick="document.getElementById('result').value+=1">1</button>
+    <button onclick="document.getElementById('result').value+=2">2</button>
+    <button onclick="document.getElementById('result').value+=3">3</button>
+    <button onclick="document.getElementById('result').value+='+'" class="signs">+</button>
+    <button onclick="document.getElementById('result').value+=0">0</button>
+    <button onclick="document.getElementById('result').value+='.'">.</button>
+    <button onclick="calc()" class="signs">=</button>
+           </div>
+    <script>
+        function calc() {
+            let answer= eval(result.value)
+            console.log(answer)
+            result.value=answer
+        }
+      
+        function deleteLast() {
+            result.value = result.value.slice(0, -1);
+        }
+        function clearResult() {
+            result.value = '';
+        }
+        function toggleSign() {
+            result.value =
+            parseFloat(result.value) * -1;
+        }
+    </script>
+</body>
+</html>
